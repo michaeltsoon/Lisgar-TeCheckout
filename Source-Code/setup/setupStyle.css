@@ -1,0 +1,267 @@
+/*  Name: Michael Cong
+    Course: ICS4U Ms. Cullum
+    Date: May 22nd, 2020
+    Purpose: Lisgar TeCheckout - ISU
+    Usage: This is the styling (.css) file for the Control Panel page
+*/
+
+
+/*Styling for the body*/
+body{
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+/*Styling for the wrapped around the page background*/
+#wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+/*Styling for the page footer*/
+#footer{
+    clear: both;
+    position: fixed;
+    bottom: 10px;
+    left: 600px;
+}
+
+/*Styling for the navigational bar*/
+nav li{
+    font-size: 24px;
+    display: inline;
+    margin: 0;
+    padding: 30px;
+    position:relative;
+    left: 170px;
+    top: -100px;
+}
+
+/*Styling for the home button (actually a link.)*/
+#homeButton{
+    font-size: 24px;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+}
+
+/*Styling for the "Home" clipart that accompanies the link.*/
+#homeIcon{
+    position: fixed;
+    top: 15px;
+    right: 170px;
+    height: 41px;
+    width: 46px;
+}
+
+/*The color of the "Home" link will change if the mouse hovers over it.*/
+#homeButton:hover{
+    color: rgb(255, 255, 153);
+    background-color: rgb(105, 105, 105);
+}
+
+/*If the "Home" link is pressed, it will go down by 3 pixels to simulate button depression.*/
+#homeButton:active{
+    top: 23px;
+}
+
+/*Styling for the table, the table headers, and the table cells.*/
+table, th, td{
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+/*Makes the table 72% width of the page*/
+table{
+    width: 72%;
+}
+
+/*Styling for the table headers and table cells*/
+th, td{
+    padding: 4px;
+    text-align: left;
+}
+
+/*Styling for the table headers. They get a different color scheme to make them stand out.*/
+th{
+    background-color: #32CD32;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+/*Every second row will have a different background color. This was done for aesthetics*/
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*If the mouse hovers over one of the rows, it will be highlighted in a different color.*/
+tr:hover {
+    background-color: #ddd;
+}
+
+/*The maximum acceptable height for the table will be 540 pixels.
+If more is required, then it will automatically overflow and create a vertical scroll bar. */
+div.tableWrapper{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    max-height: 530px;
+    overflow-y: scroll;
+}
+
+/*Styling for the button class.*/
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 40px;
+}
+
+/*The buttons will change color scheme if the mouse hovers over them*/
+.button:hover{
+    color: #4CAF50;
+    background-color: white;
+}
+
+/*Different vertical placement for each individual button found below.*/
+/*This is the "Display All Entries" button.*/
+#button1{
+    top: 120px;
+}
+
+/*This is the "Search by Student Name" button.*/
+#button2{
+    top: 180px;
+}
+
+/*This is the "Search by Day/Period# button*/
+#button3{
+    top: 240px;
+}
+
+/*This is the "Search by Laptop ID" button*/
+#button4{
+    top: 300px;
+}
+
+/*This is the "Logout" button*/
+#button5{
+    top: 420px;
+}
+
+/*This is the "Delete All" button.*/
+#button6{
+    left: 420px;
+    top: 120px;
+}
+
+/*This is the "Return to Control Panel" button.*/
+#button7{
+    left: 1050px;
+    top: 350px;
+    width: 250px;
+}
+
+/*This is the "Delete All Entries from the Day of" button.*/
+#button8{
+    top: 360px;
+}
+
+/*This is the styling for the textbox class*/
+.textbox{
+    position: absolute;
+    left: 420px;
+    height: 35px;
+    width: 295px;
+    font-size: 16px;
+    border: 3px solid #4CAF50;
+}
+
+/*This is the "Enter student name here" textbox.*/
+#textbox1{
+    top: 180px;
+}
+
+/*This is technically not a textbox, but I digress. 
+This is actually the date selector (with a dropdown calendar) for the "Search by Time/Period#" function.*/
+#textbox2{
+    top: 240px;
+    width: 180px;
+}
+
+/*Again, technically not a textbox. This is the Period # selector with a dropdown menu.*/
+#textbox3{
+    left: 620px;
+    top: 240px;
+    height: 42px;
+    width: 102px;
+}
+
+/*This is the "Enter laptop ID here" textbox.*/
+#textbox4{
+    top: 300px;
+}
+
+/*Once again, this is technically not a textbox. It just shares styling for the textbox class.
+This is actually the date selector for the "Delete All Entries from the Day of" function.*/
+#textbox5{
+    top: 360px;
+}
+
+/*Styling for the loginbox class (username & password)*/
+.loginbox{
+    position: absolute;
+    left: 140px;
+    font-size: 14px;
+    height: 22px;
+}
+
+/*Styling for the login label. ("You are currently not logged in, etc etc.")*/
+.loginLabel{
+    position:absolute;
+    font-size: 22px;
+    left: 20px;
+}
+
+/*Styling (placement) for the username label.*/
+#usernameLabel{
+    top: 70px;
+}
+
+/*Styling (placement) for the password label.*/
+#passwordLabel{
+    top: 110px;
+}
+
+/*Styling (placement) for the username textbox*/
+#usernameBox{
+    top: 75px;
+}
+
+/*Styling (placement) for the password textbox*/
+#passwordBox{
+    top: 115px;
+}
+
+/*Styling for the login button.*/
+#loginButton{
+    width: 200px;
+    top: 180px;
+    left: 80px;
+}
+
+/*Styling for the status messages at the top whenever a button is pressed*/
+.statusMessage{
+    position: absolute;
+    top: -10px;
+    left: 300px;
+    font-size: 20px;
+}

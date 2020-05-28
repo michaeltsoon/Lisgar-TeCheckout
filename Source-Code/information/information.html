@@ -1,0 +1,79 @@
+<!--Name: Michael Cong
+    Course: ICS4U Ms. Cullum
+    Date: May 22nd, 2020
+    Purpose: Lisgar TeCheckout - ISU
+    Usage: This is the .html file for the information page
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title & link to the .css file-->
+        <title>About This Website</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="informationStyle.css">
+    </head>
+
+    <!--Same background image as the other pages, within a wrapper-->
+    <style id="wrapper">
+    	body {
+    		background-image: url('../images/alternateBackground.jpg');
+    	}
+    </style>
+    <body>
+        <header>
+            <h1 class="page-title">About This Website</h1>
+        </header>
+
+        <nav>
+            <!--These are the links to the other pages of this website (in a list format)-->
+            <ul>
+                <li><a href="../index.php"><b><u>Home</u></b></a></li>
+                <li><a href="../students/students.php"><b><u>Students</u></b></a></li>
+                <li><a href="../setup/setup.php"><b><u>Teachers</u></b></a></li>
+                <li><a href="./information.html"><b><u>About This Website</u></a></a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="column">
+                <h2 class="subtitle" id="subtitle1">What is this project's purpose?</h2>
+                <p class="text">
+                    Here at Lisgar Collegiate Institute, we value the importance of technology in the 21st Century classroom. 
+                    Devices such as Windows laptops, Chromebooks, and tablets have been made available for student use.
+                    Unfortunately, there previously lacked an easy and clear-cut method to track usage/signout information.
+                    This has often led to confusion and delay. Therefore, Lisgar TeCheckout has been created to help fulfill
+                    this administrative role.
+                </p>
+            </div>
+
+            <div class="column">
+                <h2 class="subtitle" id="subtitle2">How was this website built?</h2>
+                <p class="text">
+                    This website was designed and coded over the course of five weeks by Michael Cong. 
+                    Several languages were used during development: HTML and CSS for page content and layout;
+                    PHP for linking the user input with the background MySQL database; 
+                    and some Javascript to top it all off. The majority of the code was written in Visual Studio Code, 
+                    and everything was tested thoroughly on two popular browsers - Google Chrome and Mozilla Firefox.
+                </p>
+            </div>
+            
+            <div class="column">
+                <h2 class="subtitle" id="subtitle3">How does one use this website?</h2>
+                <p class="text">
+                    There are four pages in total. "Home" is for laptop signout - 
+                    After filling out a form, simply press the "Submit" button and the website will automatically 
+                    process it. "Students" is where students can check laptop availability for a selected period. 
+                    "Teachers" is a password-protected Control Panel which staff members can access in order to
+                    view/modify the database. Lastly, "About This Website" would be the page you are reading 
+                    right now.               
+                </p>
+            </div>
+        </div>
+        
+        <!--Obligatory footer that may or may not be legal. Nothing has actually been copyrighted.-->
+        <div id="footer">
+            Copyright &copy; 2020 Michael Cong
+        </div>
+    </body>
+</html>

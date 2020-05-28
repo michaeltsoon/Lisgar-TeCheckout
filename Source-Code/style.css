@@ -1,0 +1,237 @@
+/*  Name: Michael Cong
+    Course: ICS4U Ms. Cullum
+    Date: May 22nd, 2020
+    Purpose: Lisgar TeCheckout - ISU
+    Usage: This is the styling (.css file) for the HTMl elements on the main page of the website
+*/
+
+/*Styling for the body*/
+body{
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+/*styling for the page title*/
+.page-title{
+    text-align: center;
+    color: rgb(140, 140, 140);
+    font-family: Lucida Console;
+    font-size: 40px;
+    border: 3px solid rgb(160, 160, 160);
+    padding: 10px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 3px solid rgb(160, 160, 160);
+    animation: typing 3s steps(40, end); /*This enables the typewriter animation for the title*/
+}
+
+/*Animation that makes the title expand from 0 width to 100% width*/
+@keyframes typing{
+    from{width: 0}
+    to {width: 100%}
+}
+
+/*the wrapper that contains the page background*/
+#wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+/*This is the animation for the picture that flies in at the start. Self-explanatory.*/
+@keyframes flyAround{
+    0%  {left: 2000px; top: 300px;}
+    25%  {left: 1000px; top: 300px; transform: rotate(-30deg);}
+    40%  {left: 750px; top: 200px; transform: rotate(20deg);}
+    70%  {left: 100px; top: 80px;}
+    100% {left: 30px; top: 10px;}
+}
+
+/*the actual image itself*/
+#icon1{
+    left: 30px;
+    top: 10px;
+    height: 102px;
+    width: 143px;
+    position:relative;
+    animation-name: flyAround;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+/*list that contains all the links*/
+nav li{
+    font-size: 24px;
+    display: inline;
+    margin: 0;
+    padding: 30px;
+    position:relative;
+    left: 170px;
+    top: -100px;
+}
+
+nav ul{
+    display: inline;
+}
+
+/*styles each individual element of the list*/
+nav a{
+    position: relative;
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    color: #3399FF;
+    text-decoration: none;
+}
+
+/*changes the color of the link if the mouse hovers over them.*/
+a:hover{
+    color: rgb(255, 255, 153);
+    background-color: rgb(105, 105, 105);
+}
+
+/*Upon mouse click, the link moves down a few pixels to simulate a button being depressed*/
+a:active{
+    top: 3px;
+}
+
+/*styling for the roman numerals (which all belong to the same class)*/
+.romanNumeral{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 10px;
+    left: 100px;
+}
+
+/*determines the y-position of all the individual roman numerals*/
+#roman1{
+    top: 220px;
+}
+
+#roman2{
+    top: 290px;
+}
+
+#roman3{
+    top: 360px;
+}
+
+#roman4{
+    top: 430px;
+}
+
+/*styling for the question class (text)*/
+.question{
+    color: #8A2BE2;
+    font-size: 24px;
+    position: absolute;
+    padding: 10px;
+    left: 200px;
+}
+
+/*determines the y-position of all the individual questions accordingly*/
+#question1{
+    top: 205px;
+}
+
+#question2{
+    top: 275px;
+}
+
+#question3{
+    top: 345px;
+}
+
+#question4{
+    top: 415px;
+}
+
+/*Styling for the textbox class*/
+.textbox{
+    position: absolute;
+    left: 900px;
+    height: 32px;
+    width: 240px;
+    font-size: 16px;
+    border: 3px solid #8A2BE2;
+}
+
+/*Styling(placement) for each individual textbox*/
+#textbox1{
+    top: 240px;
+}
+
+#textbox2{
+    top: 310px;
+    width: 245px;
+    height: 40px;
+}
+
+#textbox3{
+    top: 380px;
+}
+
+/*Styling for the calendar icon, bottom right*/
+#calendar{
+    padding: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    width: 70px;
+    height: 70px;
+}
+
+/*styling for the date display, bottom right corner. It has an interesting border and a different font*/
+#dateDisplay{
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 200px;
+    border: 3px dotted #73AD21;
+    border-radius: 25px;
+}
+
+/*footer style*/
+#footer{
+    clear: both;
+    position: fixed;
+    bottom: 10px;
+    right: 600px;
+}
+
+/*This is the styling for the extra special "Submit" button I spent half an hour perfecting.
+Was it worth the effort? Absolutely not. However, I regret nothing.*/
+#specialButton{
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color: #c62d1f;
+	border-radius: 18px;
+	border: 1px solid #d02718;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 28px;
+	padding: 13px 36px;
+	text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+    position: absolute;
+    left: 950px;
+    top: 445px;
+}
+
+/*If the mouse is hovering over the button, it changes color scheme*/
+#specialButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+
+/*When clicked, the button goes down by 3 pixels to simulate button depression*/
+#specialButton:active {
+	top:448px;
+}
