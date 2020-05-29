@@ -82,8 +82,14 @@
 
     //Same as above. This time there are two conditions though. (The period # must be correct, and the timestamp must be from the specified date)
     function timeSearch($mysqli, $keywordDate, $keywordPeriod){
-        $sql = "SELECT timeStamp, laptopID, studentName, periodNumber FROM signoutrecord_table 
+        //If it is 5, that means that entries from the entire day must be shown. 
+        if($keywordPeriod == 5){
+            $sql = "SELECT timeStamp, laptopID, studentName, periodNumber FROM signoutrecord_table 
+            WHERE timeStamp LIKE '%". $keywordDate ."%'";
+        } else{
+            $sql = "SELECT timeStamp, laptopID, studentName, periodNumber FROM signoutrecord_table 
             WHERE periodNumber = $keywordPeriod AND timeStamp LIKE '%". $keywordDate ."%'";
+        }
         $result = $mysqli->query($sql);
         printTable($result);
         $mysqli->close();

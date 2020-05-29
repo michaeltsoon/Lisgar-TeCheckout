@@ -181,11 +181,11 @@
                         <input type="date" name="searchDate" class="textbox" id="textbox2">
                         <!--There are only 5 valid selections for the period #, because logic. (4 periods in a school day + all day option)-->
                         <select name="searchPeriod" class="textbox" id="textbox3">
-                            <option value="1">Period #1</option>
-                            <option value="2">Period #2</option>
-                            <option value="3">Period #3</option>
-                            <option value="4">Period #4</option>
-                            <option value="">All Periods</option>
+                            <option value=1>Period #1</option>
+                            <option value=2>Period #2</option>
+                            <option value=3>Period #3</option>
+                            <option value=4>Period #4</option>
+                            <option value=5>All Periods</option>
                         </select>
                     </form>
 
